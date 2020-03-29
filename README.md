@@ -25,3 +25,17 @@ Connect to EZSync010 and specify the baud rate
 ```Shell
 screen /dev/tty.usbserial-AB0KFHEJ 9600
 ```
+## Issue Commands
+Query Bridge
+```Shell
+!123D000v?;
+```
+Response
+```Shell
+!123D001vZ10;!123D002vZ10;!123D003vU10;!123DFFFv000;
+`
+| Value  | Description |
+| ------------- | ------------- |
+| !123D001vZ10  | Dining Room 1, One Way Blind |
+| !123D002vZ10  | Dining Room 2, One Way Blind |
+| !123D003vU10  | Kitchen Blind, Two Way Blind |
