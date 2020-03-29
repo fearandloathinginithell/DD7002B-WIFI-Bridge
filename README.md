@@ -9,7 +9,13 @@ or other RS485 bridge
 ![EZSync010](https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/EZSync010.jpg)
 
 ## Connecting to Bridge
+List USB devices to retreive the name of the EZSync010
 
 ```Shell
 ls /dev/tty.*
+/dev/tty.Bluetooth-Incoming-Port	/dev/tty.usbserial-AB0KFHEJ
+```
+Connect to EZSync010 and specify the baud rate
+```Shell
+screen /dev/tty.usbserial-AB0KFHEJ 9600
 ```
