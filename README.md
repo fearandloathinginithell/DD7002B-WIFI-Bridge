@@ -7,3 +7,9 @@ or other RS485 bridge
 
 
 ![EZSync010](https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/EZSync010.jpg)
+
+## Connecting to Bridge
+
+```Shell
+ls /dev/tty.*
+```
