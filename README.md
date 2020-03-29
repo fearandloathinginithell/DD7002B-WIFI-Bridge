@@ -33,7 +33,8 @@ Query Bridge
 Response
 ```Shell
 !123D001vZ10;!123D002vZ10;!123D003vU10;!123DFFFv000;
-`
+```
+
 | Value  | Description |
 | ------------- | ------------- |
 | !123D001vZ10  | Dining Room 1, One Way Blind |
