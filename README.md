@@ -14,7 +14,7 @@ No additional drivers required
 ### Windows 10 1909
 Drivers for chipset https://www.ftdichip.com/FTDrivers.htm
 
-## Connecting to Bridge
+## Connecting to Bridge macOS Catalina
 List USB devices to retreive the name of the EZSync010
 
 ```Shell
