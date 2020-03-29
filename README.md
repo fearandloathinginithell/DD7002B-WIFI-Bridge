@@ -8,6 +8,12 @@ or other RS485 bridge
 
 ![EZSync010](https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/EZSync010.jpg)
 
+## Drivers
+### macOS Catalina
+No additional drivers required
+### Windows 10 1909
+Drivers for chipset https://www.ftdichip.com/FTDrivers.htm
+
 ## Connecting to Bridge
 List USB devices to retreive the name of the EZSync010
 
