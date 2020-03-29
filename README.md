@@ -53,15 +53,15 @@ To close
 ```
 !123D003c;
 ```
-Either command just returns exisitng position of the blind open or cloded
+Either command just returns exisitng position of the blind open or closed
 
+Opened
+```Shell
+!123D003r0b0
+```
 
 Closed
 ```Shell
 !123D003r100b180
 ```
-
-Open
-```Shell
-!123D003r0b0
-```
+Issuing the appropriate command for the one way blinds has the expected behaviour, the API to operate two way blinds is not supported or not documented, lets hope it is the later. 
