@@ -44,11 +44,12 @@ Response
 
 ### Problems
 Issuing commands to the two way blind just returns possition
-Open
+
+To open
 ```
 !123D003o;
 ```
-Close
+To close
 ```
 !123D003c;
 ```
