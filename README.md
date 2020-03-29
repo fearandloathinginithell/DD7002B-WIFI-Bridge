@@ -1,4 +1,4 @@
-# DD7002B-WIFI-Bridge
+# DD7002B WIFI Bridge
 ## Requirements
 DD7002B WIFI Bridge
 
@@ -41,3 +41,26 @@ Response
 | !123D002vZ10  | Dining Room 2, One Way Blind |
 | !123D003vU10  | Kitchen Blind, Two Way Blind |
 | !123DFFFv000  | Unknown |
+
+### Problems
+Issuing commands to the two way blind just returns possition
+Open
+```
+!123D003o;
+```
+Close
+```
+!123D003c;
+```
+Either command just returns exisitng position of the blind open or cloded
+
+
+Closed
+```Shell
+!123D003r100b180
+```
+
+Open
+```Shell
+!123D003r0b0
+```
