@@ -1,6 +1,6 @@
 # DD7002B WIFI Bridge
 ## Requirements
-DD7002B WIFI Bridge
+DD7002B WIFI Bridge firmware 0.8.0
 
 EZSync010 [amazon affiliate link](https://www.amazon.com/gp/product/B010KJSCR8/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B010KJSCR8&linkCode=as2&tag=fearandloa051-20&linkId=ba84822693d1dd483c71e3913e287d01)
 or other RS485 bridge
@@ -43,25 +43,5 @@ Response
 | !123DFFFv000  | Unknown |
 
 ### Problems
-Issuing commands to the two way blind just returns possition
-
-To open
-```
-!123D003o;
-```
-To close
-```
-!123D003c;
-```
-Either command just returns exisitng position of the blind open or closed
-
-Opened
-```Shell
-!123D003r0b0
-```
-
-Closed
-```Shell
-!123D003r100b180
-```
-Issuing the appropriate command for the one way blinds has the expected behaviour, the API to operate two way blinds is not supported or not documented, lets hope it is the later. 
+#### Issuing commands to the two way blind just returns possition
+THis issue was resolved with bridge firmware 0.8.0
