@@ -14,6 +14,18 @@ No additional drivers required
 ### Windows 10 1909
 Drivers for chipset https://www.ftdichip.com/FTDrivers.htm
 
+### Raspberry Pi
+No additional drivers required
+
+## Connecting to Bridge Raspberry Pi
+Install Screen if required
+```Shell
+sudo apt-get install screen
+```
+```Shell
+screen /dev/ttyUSB0 9600
+'''
+
 ## Connecting to Bridge macOS Catalina
 List USB devices to retreive the name of the EZSync010
 
