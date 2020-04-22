@@ -24,8 +24,7 @@ sudo apt-get install screen
 ```
 ```Shell
 screen /dev/ttyUSB0 9600
-'''
-
+```
 ## Connecting to Bridge macOS Catalina
 List USB devices to retreive the name of the EZSync010
 
