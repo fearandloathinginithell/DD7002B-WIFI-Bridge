@@ -55,7 +55,7 @@ screen /dev/tty.usbserial-AB0KFHEJ 9600
 
 ## Home Assistant
 Working Home Assistant configuration
-###
+### configuration.yaml
 ```
 switch:
   platform: command_line
@@ -80,7 +80,7 @@ switch.blind_*:
 ```
 
 ## Issues
-###
+### Command does not allow for feedback
 Current command line solution does not allow for blind feed back from two way blinds i.e. Kitchen
 ### Issuing commands to the two way blind just returns possition
 This issue was resolved with bridge firmware 0.8.0
