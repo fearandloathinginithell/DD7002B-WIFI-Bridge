@@ -6,7 +6,7 @@ EZSync010 [amazon affiliate link](https://www.amazon.com/gp/product/B010KJSCR8/r
 or other RS485 bridge
 
 
-![EZSync010](https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/EZSync010.jpg)
+![EZSync010](https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/assets/EZSync010.jpg)
 
 ## Drivers
 ### macOS Catalina
@@ -55,6 +55,7 @@ screen /dev/tty.usbserial-AB0KFHEJ 9600
 
 ## Home Assistant
 Working Home Assistant configuration
+https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/assets/iOS_Blinds1.jpg
 ### configuration.yaml
 ```
 switch:
