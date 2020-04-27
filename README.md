@@ -55,7 +55,7 @@ screen /dev/tty.usbserial-AB0KFHEJ 9600
 
 ## Home Assistant
 Working Home Assistant configuration
-https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/assets/iOS_Blinds1.jpg
+![iOS_blinds] (https://github.com/fearandloathinginithell/DD7002B-WIFI-Bridge/blob/master/assets/iOS_Blinds1.jpg)
 ### configuration.yaml
 ```
 switch:
