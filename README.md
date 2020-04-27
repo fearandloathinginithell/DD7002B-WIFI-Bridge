@@ -79,6 +79,7 @@ switch:
 ```
 switch.blind_*:
   icon: mdi:blinds
+  assumed_state: false
 ```
 
 ## Issues
