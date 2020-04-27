@@ -37,15 +37,15 @@ Connect to EZSync010 and specify the baud rate
 screen /dev/tty.usbserial-AB0KFHEJ 9600
 ```
 ## Issue Commands
-Query Bridge
+### Query Bridge
 ```Shell
 !123D000v?;
 ```
-Response
+#### Response
 ```Shell
 !123D001vZ10;!123D002vZ10;!123D003vU10;!123DFFFv000;
 ```
-
+## Blind information
 | Value  | Description |
 | ------------- | ------------- |
 | !123D001vZ10  | Dining Room 1, One Way Blind |
@@ -53,6 +53,34 @@ Response
 | !123D003vU10  | Kitchen Blind, Two Way Blind |
 | !123DFFFv000  | Unknown |
 
-### Problems
-#### Issuing commands to the two way blind just returns possition
-THis issue was resolved with bridge firmware 0.8.0
+## Home Assistant
+Working Home Assistant configuration
+###
+```
+switch:
+  platform: command_line
+  switches:
+    blind_dining_nw:
+      command_on: '/bin/bash -c "( stty raw speed 9600 >&2; echo -ne ''!123D001o;'' ) >/dev/ttyUSB0 <&1"'
+      command_off: '/bin/bash -c "( stty raw speed 9600 >&2; echo -ne ''!123D001c;'' ) >/dev/ttyUSB0 <&1"'
+      friendly_name: Blind Dining North West
+    blind_dining_n:
+      command_on: '/bin/bash -c "( stty raw speed 9600 >&2; echo -ne ''!123D002o;'' ) >/dev/ttyUSB0 <&1"'
+      command_off: '/bin/bash -c "( stty raw speed 9600 >&2; echo -ne ''!123D002c;'' ) >/dev/ttyUSB0 <&1"'
+      friendly_name: Blind Dining North
+    blind_kitchen:
+      command_on: '/bin/bash -c "( stty raw speed 9600 >&2; echo -ne ''!123D003o;'' ) >/dev/ttyUSB0 <&1"'
+      command_off: '/bin/bash -c "( stty raw speed 9600 >&2; echo -ne ''!123D003c;'' ) >/dev/ttyUSB0 <&1"'
+      friendly_name: Blind Kitchen
+```
+### customize_glob.yaml
+```
+switch.blind_*:
+  icon: mdi:blinds
+```
+
+## Issues
+###
+Current command line solution does not allow for blind feed back from two way blinds i.e. Kitchen
+### Issuing commands to the two way blind just returns possition
+This issue was resolved with bridge firmware 0.8.0
